@@ -55,5 +55,9 @@ export default function setupSignaling(io) {
     socket.on("disconnect", () => {
       console.log("🔌 Disconnected:", socket.id);
     });
+
+    socket.on("audio-data", (buffer) => {
+      socket.broadcast.emit("audio-data", buffer);
+    });
   });
 }

@@ -100,6 +100,7 @@ const joinRoom = async () => {
     socket.emit("join", roomId.value);
     joined.value = true;
   } catch (err) {
+    console.log(err);
     alert("Failed to access microphone");
     console.error(err);
   }
