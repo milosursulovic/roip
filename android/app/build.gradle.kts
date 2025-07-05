@@ -40,6 +40,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.webrtc.sdk.android)
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
     implementation(libs.socket.io.client)

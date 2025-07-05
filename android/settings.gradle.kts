@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Roip APp"
+rootProject.name = "Roip App"
 include(":app")
  
